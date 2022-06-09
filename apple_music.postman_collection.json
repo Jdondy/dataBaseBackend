@@ -1,0 +1,446 @@
+{
+	"info": {
+		"_postman_id": "064ded08-585c-4931-b3dc-be805361ce20",
+		"name": "apple_music",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21117821"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4400",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"inputs\":{\r\n  \"id\":null,\r\n    \"firstName\":\"Mervin\", \r\n    \"lastName\":\"Jons\", \r\n    \"password\":\"ppp\", \r\n    \"avatar\":\"avatar.jpg\", \r\n    \"initials\":\"MJ\", \r\n    \"email\":\"email@123.com\", \r\n    \"bio\":\"some bio\", \r\n    \"active\":1, \r\n    \"dateAdded\":\"*fillInCurrentDate*\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"query": [
+						{
+							"key": "/course/getCoachStats",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/showTables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/showTables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"showTables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"userId\": null,\r\n        \"userName\": \"badLandsChugs\",\r\n        \"userPhoto\": \"15348\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateGenre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"genreId\": 7,\r\n        \"genreName\": \"Rap\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateGenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateGenre"
+					],
+					"query": [
+						{
+							"key": "/course/getCoachStats",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdatePlaylist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"playlistId\": 10,\r\n        \"playlistPhoto\": \"5678\",\r\n        \"playlistName\": \"burger\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdatePlaylist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdatePlaylist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/addOrUpdateAlbum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\":\r\n    {\"albumId\":6,\r\n    \"albumDescription\":\"funk pop mix\",\r\n    \"albumTitle\":\"groovy jams\",\r\n    \"albumPhoto\":\"5646\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/addOrUpdateAlbum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"addOrUpdateAlbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getUsersAndPlaylists/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4400/getUsersAndPlaylists/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getUsersAndPlaylists",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getArtistsAndGenres/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/getArtistsAndGenres/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getArtistsAndGenres",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/getRadioStationsAndUsers/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4400/getRadioStationsAndUsers/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"getRadioStationsAndUsers",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/updateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"userName\": \"John\",\r\n        \"userId\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/updateuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"updateuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/updateAlbum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"albumTitle\": \"burger king whopper\",\r\n        \"albumId\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/updateAlbum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"updateAlbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"userId\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deletePlaylist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"playlistId\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deletePlaylist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deletePlaylist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteAlbum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"albumId\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteAlbum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteAlbum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteRadio_episode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"radioEpisodeId\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteRadio_episode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteRadio_episode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4400/deleteSong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": {\r\n        \"songId\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4400/deleteSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4400",
+					"path": [
+						"deleteSong"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
